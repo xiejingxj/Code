@@ -1,0 +1,164 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+E:\TortoiseGit\基于CAN的温度接收及显示\main.uvproj
+Project File Date:  07/19/2016
+
+<h2>Output:</h2>
+Build target 'Target 1'
+assembling STARTUP.A51...
+compiling main.c...
+MAIN.C(191): error C141: syntax error near 'unsigned'
+MAIN.C(191): error C202: 'xiaoshu': undefined identifier
+MAIN.C(193): error C141: syntax error near 'DisBuff'
+Target not created
+Build target 'Target 1'
+assembling STARTUP.A51...
+compiling main.c...
+MAIN.C(191): error C141: syntax error near 'unsigned'
+MAIN.C(191): error C202: 'xiaoshu': undefined identifier
+MAIN.C(192): error C141: syntax error near 'unsigned'
+MAIN.C(192): error C202: 'ge': undefined identifier
+MAIN.C(193): error C141: syntax error near 'unsigned'
+MAIN.C(193): error C202: 'shi': undefined identifier
+MAIN.C(194): error C141: syntax error near 'unsigned'
+MAIN.C(194): error C202: 'bai': undefined identifier
+MAIN.C(196): error C202: 'xiaoshu': undefined identifier
+MAIN.C(197): error C202: 'xiaoshu': undefined identifier
+MAIN.C(198): error C202: 'ge': undefined identifier
+MAIN.C(199): error C202: 'ge': undefined identifier
+MAIN.C(200): error C202: 'shi': undefined identifier
+MAIN.C(201): error C202: 'shi': undefined identifier
+MAIN.C(202): error C202: 'bai': undefined identifier
+MAIN.C(203): error C202: 'bai': undefined identifier
+Target not created
+Build target 'Target 1'
+assembling STARTUP.A51...
+compiling main.c...
+MAIN.C(191): error C141: syntax error near 'unsigned'
+MAIN.C(191): error C202: 'xiaoshu': undefined identifier
+MAIN.C(192): error C141: syntax error near 'unsigned'
+MAIN.C(192): error C202: 'ge': undefined identifier
+MAIN.C(193): error C141: syntax error near 'unsigned'
+MAIN.C(193): error C202: 'shi': undefined identifier
+MAIN.C(194): error C141: syntax error near 'unsigned'
+MAIN.C(194): error C202: 'bai': undefined identifier
+MAIN.C(196): error C202: 'xiaoshu': undefined identifier
+MAIN.C(197): error C202: 'xiaoshu': undefined identifier
+MAIN.C(198): error C202: 'ge': undefined identifier
+MAIN.C(199): error C202: 'ge': undefined identifier
+MAIN.C(200): error C202: 'shi': undefined identifier
+MAIN.C(201): error C202: 'shi': undefined identifier
+MAIN.C(202): error C202: 'bai': undefined identifier
+MAIN.C(203): error C202: 'bai': undefined identifier
+Target not created
+Build target 'Target 1'
+assembling STARTUP.A51...
+compiling main.c...
+MAIN.C(191): error C141: syntax error near 'unsigned'
+MAIN.C(191): error C202: 'xiaoshu': undefined identifier
+MAIN.C(192): error C141: syntax error near 'unsigned'
+MAIN.C(192): error C202: 'ge': undefined identifier
+MAIN.C(193): error C141: syntax error near 'unsigned'
+MAIN.C(193): error C202: 'shi': undefined identifier
+MAIN.C(194): error C141: syntax error near 'unsigned'
+MAIN.C(194): error C202: 'bai': undefined identifier
+MAIN.C(196): error C202: 'xiaoshu': undefined identifier
+MAIN.C(197): error C202: 'xiaoshu': undefined identifier
+MAIN.C(198): error C202: 'ge': undefined identifier
+MAIN.C(199): error C202: 'ge': undefined identifier
+MAIN.C(200): error C202: 'shi': undefined identifier
+MAIN.C(201): error C202: 'shi': undefined identifier
+MAIN.C(202): error C202: 'bai': undefined identifier
+MAIN.C(203): error C202: 'bai': undefined identifier
+Target not created
+Build target 'Target 1'
+assembling STARTUP.A51...
+compiling main.c...
+MAIN.C(191): error C141: syntax error near 'unsigned'
+MAIN.C(191): error C202: 'xiaoshu': undefined identifier
+MAIN.C(192): error C141: syntax error near 'unsigned'
+MAIN.C(192): error C202: 'ge': undefined identifier
+MAIN.C(193): error C141: syntax error near 'unsigned'
+MAIN.C(193): error C202: 'shi': undefined identifier
+MAIN.C(194): error C141: syntax error near 'unsigned'
+MAIN.C(194): error C202: 'bai': undefined identifier
+MAIN.C(196): error C202: 'xiaoshu': undefined identifier
+MAIN.C(197): error C202: 'xiaoshu': undefined identifier
+MAIN.C(198): error C202: 'ge': undefined identifier
+MAIN.C(199): error C202: 'ge': undefined identifier
+MAIN.C(200): error C202: 'shi': undefined identifier
+MAIN.C(201): error C202: 'shi': undefined identifier
+MAIN.C(202): error C202: 'bai': undefined identifier
+MAIN.C(203): error C202: 'bai': undefined identifier
+Target not created
+Build target 'Target 1'
+assembling STARTUP.A51...
+compiling main.c...
+MAIN.C(191): error C141: syntax error near 'unsigned'
+MAIN.C(191): error C202: 'xiaoshu': undefined identifier
+MAIN.C(193): error C202: 'xiaoshu': undefined identifier
+MAIN.C(194): error C202: 'ge': undefined identifier
+MAIN.C(195): error C202: 'shi': undefined identifier
+MAIN.C(196): error C202: 'bai': undefined identifier
+MAIN.C(198): error C202: 'xiaoshu': undefined identifier
+MAIN.C(199): error C202: 'xiaoshu': undefined identifier
+MAIN.C(200): error C202: 'ge': undefined identifier
+MAIN.C(201): error C202: 'ge': undefined identifier
+MAIN.C(202): error C202: 'shi': undefined identifier
+MAIN.C(203): error C202: 'shi': undefined identifier
+MAIN.C(204): error C202: 'bai': undefined identifier
+MAIN.C(205): error C202: 'bai': undefined identifier
+Target not created
+Build target 'Target 1'
+assembling STARTUP.A51...
+compiling main.c...
+MAIN.C(191): error C141: syntax error near 'unsigned'
+MAIN.C(191): error C202: 'xiaoshu': undefined identifier
+MAIN.C(193): error C202: 'xiaoshu': undefined identifier
+MAIN.C(194): error C202: 'ge': undefined identifier
+MAIN.C(195): error C202: 'shi': undefined identifier
+MAIN.C(196): error C202: 'bai': undefined identifier
+MAIN.C(198): error C202: 'xiaoshu': undefined identifier
+MAIN.C(199): error C202: 'xiaoshu': undefined identifier
+MAIN.C(200): error C202: 'ge': undefined identifier
+MAIN.C(201): error C202: 'ge': undefined identifier
+MAIN.C(202): error C202: 'shi': undefined identifier
+MAIN.C(203): error C202: 'shi': undefined identifier
+MAIN.C(204): error C202: 'bai': undefined identifier
+MAIN.C(205): error C202: 'bai': undefined identifier
+Target not created
+Build target 'Target 1'
+assembling STARTUP.A51...
+compiling main.c...
+MAIN.C(191): error C141: syntax error near 'int'
+MAIN.C(191): error C202: 'xiaoshu': undefined identifier
+MAIN.C(193): error C202: 'xiaoshu': undefined identifier
+MAIN.C(194): error C202: 'ge': undefined identifier
+MAIN.C(195): error C202: 'shi': undefined identifier
+MAIN.C(196): error C202: 'bai': undefined identifier
+MAIN.C(198): error C202: 'xiaoshu': undefined identifier
+MAIN.C(199): error C202: 'xiaoshu': undefined identifier
+MAIN.C(200): error C202: 'ge': undefined identifier
+MAIN.C(201): error C202: 'ge': undefined identifier
+MAIN.C(202): error C202: 'shi': undefined identifier
+MAIN.C(203): error C202: 'shi': undefined identifier
+MAIN.C(204): error C202: 'bai': undefined identifier
+MAIN.C(205): error C202: 'bai': undefined identifier
+Target not created
+Build target 'Target 1'
+assembling STARTUP.A51...
+compiling main.c...
+linking...
+Program Size: data=53.0 xdata=0 code=895
+creating hex file from "main"...
+"main" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling STARTUP.A51...
+compiling main.c...
+linking...
+Program Size: data=53.0 xdata=0 code=895
+creating hex file from "main"...
+"main" - 0 Error(s), 0 Warning(s).

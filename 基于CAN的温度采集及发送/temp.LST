@@ -1,4 +1,4 @@
-C51 COMPILER V9.01   TEMP                                                                  07/19/2016 14:22:05 PAGE 1   
+C51 COMPILER V9.01   TEMP                                                                  07/19/2016 14:58:26 PAGE 1   
 
 
 C51 COMPILER V9.01, COMPILATION OF MODULE TEMP
@@ -62,7 +62,7 @@ line level    source
   53   1      }
   54          
   55          void SetStep(uint8 Dat) 
-C51 COMPILER V9.01   TEMP                                                                  07/19/2016 14:22:05 PAGE 2   
+C51 COMPILER V9.01   TEMP                                                                  07/19/2016 14:58:26 PAGE 2   
 
   56          {
   57   1              Inti();

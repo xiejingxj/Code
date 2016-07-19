@@ -1,0 +1,21 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+E:\TortoiseGit\基于CAN温度采集及发送\main.uvproj
+Project File Date:  07/19/2016
+
+<h2>Output:</h2>
+Build target 'Target 1'
+assembling STARTUP.A51...
+compiling main.c...
+compiling temp.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?TEMP2RXDDATA?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?LED_DISP_SEG7?MAIN
+Program Size: data=47.1 xdata=0 code=982
+creating hex file from "main"...
+"main" - 0 Error(s), 2 Warning(s).

@@ -130,8 +130,8 @@ void Peli_TXD( void )
 {
     uint8 data Status;
     
-    Txd_data1 = (TempH<<4) |(TempL>>4) ;
-	Txd_data2 = TempL&0xf ;
+    Txd_data1 = (TempH<<4) |(TempL>>4) ;   //整数
+	Txd_data2 = TempL&0xf ;				   //小数
 
 //初始化标示码头信息
     TX_buffer[0] = 0x88;//.7=0扩展帧；.6=0数据帧; .3=1数据长度

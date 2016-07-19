@@ -186,10 +186,10 @@
       <FileType>1</FileType>
       <tvExp>1</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>45</ColumnNumber>
+      <ColumnNumber>37</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>1</TopLine>
-      <CurrentLine>25</CurrentLine>
+      <TopLine>109</TopLine>
+      <CurrentLine>134</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\main.c</PathWithFileName>
       <FilenameWithoutPath>main.c</FilenameWithoutPath>
@@ -219,10 +219,10 @@
       <FileType>1</FileType>
       <tvExp>1</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>3</ColumnNumber>
+      <ColumnNumber>5</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>57</TopLine>
-      <CurrentLine>94</CurrentLine>
+      <TopLine>1</TopLine>
+      <CurrentLine>7</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\temp.c</PathWithFileName>
       <FilenameWithoutPath>temp.c</FilenameWithoutPath>
@@ -230,9 +230,9 @@
   </Group>
 
   <AlienFiles>
-    <PathWithFilename>F:\CAN_code\8-2 CAN两个节点（两块CAN开发板）\temp.h</PathWithFilename>
+    <PathWithFilename>E:\TortoiseGit\基于CAN温度采集及发送\SJAPELICAN.H</PathWithFilename>
     <TopLine>1</TopLine>
-    <CurrentLine>4</CurrentLine>
+    <CurrentLine>24</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
       <length>0</length>
@@ -256,9 +256,9 @@
   </AlienFiles>
 
   <AlienFiles>
-    <PathWithFilename>F:\CAN_code\8-2 CAN两个节点（两块CAN开发板）\sjapelican.h</PathWithFilename>
+    <PathWithFilename>E:\TortoiseGit\基于CAN温度采集及发送\TEMP.H</PathWithFilename>
     <TopLine>1</TopLine>
-    <CurrentLine>24</CurrentLine>
+    <CurrentLine>4</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
       <length>0</length>
@@ -1622,13 +1622,13 @@
     <ActiveMDIGroup>0</ActiveMDIGroup>
     <MDIGroup>
       <Size>100</Size>
-      <ActiveTab>2</ActiveTab>
+      <ActiveTab>0</ActiveTab>
       <Documents>
         <Doc>
           <Name>.\main.c</Name>
-          <ColumnNumber>45</ColumnNumber>
-          <TopLine>67</TopLine>
-          <CurrentLine>67</CurrentLine>
+          <ColumnNumber>37</ColumnNumber>
+          <TopLine>109</TopLine>
+          <CurrentLine>134</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\temp.c</Name>

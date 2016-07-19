@@ -1,4 +1,4 @@
-C51 COMPILER V9.01   MAIN                                                                  07/19/2016 14:22:05 PAGE 1   
+C51 COMPILER V9.01   MAIN                                                                  07/19/2016 14:58:26 PAGE 1   
 
 
 C51 COMPILER V9.01, COMPILATION OF MODULE MAIN
@@ -62,7 +62,7 @@ line level    source
   53   1              mDelay(10);     //延时
   54   1          SJA_RST = 1;//CAN总线复位管脚,复位无效
   55   1          SJA_CS = 0;//CAN总线片选有效
-C51 COMPILER V9.01   MAIN                                                                  07/19/2016 14:22:05 PAGE 2   
+C51 COMPILER V9.01   MAIN                                                                  07/19/2016 14:58:26 PAGE 2   
 
   56   1      
   57   1          EX1 = 1;//外部中断1使能；CAN总线接收中断
@@ -126,7 +126,7 @@ line level    source
  115   1          SJA_AMR0  = 0xff;
  116   1          SJA_AMR1  = 0xff;
  117   1          SJA_AMR2  = 0xff;
-C51 COMPILER V9.01   MAIN                                                                  07/19/2016 14:22:05 PAGE 3   
+C51 COMPILER V9.01   MAIN                                                                  07/19/2016 14:58:26 PAGE 3   
 
  118   1          SJA_AMR3  = 0xff;//初始化掩码
  119   1      
@@ -190,7 +190,7 @@ line level    source
  177   1          SJA_TBSR5  = TX_buffer[5];
  178   1          SJA_TBSR6  = TX_buffer[6];
  179   1          SJA_TBSR7  = TX_buffer[7];
-C51 COMPILER V9.01   MAIN                                                                  07/19/2016 14:22:05 PAGE 4   
+C51 COMPILER V9.01   MAIN                                                                  07/19/2016 14:58:26 PAGE 4   
 
  180   1          SJA_TBSR8  = TX_buffer[8];
  181   1          SJA_TBSR9  = TX_buffer[9];
