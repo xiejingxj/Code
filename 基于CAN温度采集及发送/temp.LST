@@ -1,0 +1,128 @@
+C51 COMPILER V9.01   TEMP                                                                  07/19/2016 14:22:05 PAGE 1   
+
+
+C51 COMPILER V9.01, COMPILATION OF MODULE TEMP
+OBJECT MODULE PLACED IN temp.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE temp.c BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+   1          #include<reg52.h>
+   2          #include"config.h"
+   3          #include"temp.h"
+   4          
+   5          bit Presence;
+   6          sbit DataPort =P3^5;            //18B20的数据口
+   7          uint8 TempL,TempH;
+   8          
+   9          void uDelay(uint8 DelayTime)             
+  10          {       
+  11   1              while(--DelayTime);               
+  12   1      }
+  13          
+  14          void Inti()
+  15          {
+  16   1              DataPort=0;      //拉低
+  17   1              uDelay(180);     //延时后拉高
+  18   1              DataPort=1;
+  19   1              uDelay(24);      //延时后读状态，如果存在，由18B20将端口拉低
+  20   1              Presence=DataPort;//状态存入，用于后面显示判断
+  21   1              uDelay(230);    //延时完成一周期时间
+  22   1      }
+  23          
+  24          void WriteByte(uint8 val)       
+  25          {
+  26   1       uint8 i;
+  27   1        for (i=8; i>0; i--) 
+  28   1        {
+  29   2          DataPort = 0;
+  30   2              uDelay(4); 
+  31   2          DataPort = val&0x01;
+  32   2          uDelay(20); 
+  33   2          DataPort = 1;
+  34   2          val=val/2;     // 左移1位
+  35   2        }
+  36   1        uDelay(50);
+  37   1      }
+  38          
+  39          //字节读取函数
+  40          uint8 ReadByte()         
+  41          {
+  42   1      uint8 i;
+  43   1      uint8 value=0;
+  44   1              for (i=0;i<8;i++)//读入8字节
+  45   1              {
+  46   2                      DataPort=0;     //拉低后再拉高，产生读间隙
+  47   2                      DataPort=1;
+  48   2                      uDelay(4); //延时后读入
+  49   2                      if(DataPort) value|=0x01<<i;
+  50   2                      uDelay(20); //延时完成一周期时间
+  51   2              }
+  52   1      return (value);
+  53   1      }
+  54          
+  55          void SetStep(uint8 Dat) 
+C51 COMPILER V9.01   TEMP                                                                  07/19/2016 14:22:05 PAGE 2   
+
+  56          {
+  57   1              Inti();
+  58   1              WriteByte(0xcc);
+  59   1              WriteByte(0x4e);
+  60   1              WriteByte(0x15);  //写地址2—TH
+  61   1              WriteByte(0x00);   //写地址3—TL
+  62   1              WriteByte(Dat);  //地址4,保留区，用于小数后分辨率，1F，3F，5F，7F取值，值越大分辨率越高
+  63   1              Inti();
+  64   1              WriteByte(0xcc);
+  65   1              WriteByte(0xbe);
+  66   1              ReadByte();
+  67   1              Inti();
+  68   1              WriteByte(0xcc);
+  69   1              WriteByte(0x48); //拷贝指令，发出后等6ms等待18B20将数据写入EEPROM，写结束再复位。
+  70   1              uDelay(100);
+  71   1              Inti();
+  72   1              DataPort=1;
+  73   1      }
+  74          
+  75          void GetTemp()     
+  76          { 
+  77   1          //温度转换
+  78   1              Inti();                           //复位               //每执行一条指令补充显示，消除闪动
+  79   1              WriteByte(0xcc);                 //ROM 指令
+  80   1              WriteByte(0x44);         //RAM指令
+  81   1              //读取RAM
+  82   1              Inti();                                  //复位
+  83   1              WriteByte(0xcc);                 //ROM 指令
+  84   1              WriteByte(0xbe);                 //RAM指令
+  85   1              TempL=ReadByte();                //读取温度低字节
+  86   1              TempH=ReadByte();                //读取温度高字节
+  87   1      }
+  88          
+  89          void temp_init()
+  90          {
+  91   1          uDelay(100);
+  92   1              Presence=1;
+  93   1              SetStep(0x7f);  //入口参数
+  94   1              GetTemp();         //温度获得子程序
+  95   1              //Display(100); //发送第一个取温度指令后，要延时一段时间等待内部转换。（解决开机显示85度的问题。）
+  96   1      }
+  97          
+  98          
+  99          void temp(void)
+ 100          {   
+ 101   1              GetTemp();      //温度获得子程序
+ 102   1              //Display(50);//数码管显示子程序
+ 103   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    201    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =      2    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =      1    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)
